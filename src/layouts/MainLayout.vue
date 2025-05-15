@@ -12,7 +12,7 @@
         />
 
         <q-toolbar-title>
-          Quasar App
+          Cavatech
         </q-toolbar-title>
 
         <div>Quasar v{{ $q.version }}</div>
@@ -94,7 +94,7 @@ const linksList: EssentialLinkProps[] = [
   }
 ];
 
-const leftDrawerOpen = ref(false);
+const leftDrawerOpen = ref(false); // this cant be reversed???? its always auto open
 
 function toggleLeftDrawer () {
   leftDrawerOpen.value = !leftDrawerOpen.value;

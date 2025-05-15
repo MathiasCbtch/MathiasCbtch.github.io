@@ -1,45 +1,27 @@
 <template>
   <div class="example-wrapper">
     <p class="title-text">{{ title }}</p>
+    <p class="sub-title-text">{{ subtitle }}</p>
+    <p class="tutorial">{{ tutorial }}</p>
+  </div>
 
-    <ul class="todo-list">
-      <li v-for="todo in todos" :key="todo.id" @click="increment">
-        {{ todo.id }} - {{ todo.content }}
-      </li>
-    </ul>
-
-    <p class="meta">Count: {{ todoCount }} / {{ meta.totalCount }}</p>
-    <p class="status">Active: {{ active ? 'yes' : 'no' }}</p>
-    <p class="clicks">Clicks on todos: {{ clickCount }}</p>
+  <div class="testing">
+    <p class="str"> {{ str }}</p>
   </div>
 </template>
 
 <script setup lang="ts">
-import { computed, ref } from 'vue'
-import type { Todo, Meta } from './models'
-
 interface Props {
   title: string
-  todos?: Todo[]
-  meta: Meta
-  active: boolean
+  subtitle: string
+  tutorial: string
+  str: string
 }
 
-const props = withDefaults(defineProps<Props>(), {
-  todos: () => []
-})
-
-const clickCount = ref(0)
-function increment() {
-  clickCount.value += 1
-  return clickCount.value
-}
-
-const todoCount = computed(() => props.todos.length)
+defineProps<Props>()
 </script>
 
 <style lang="scss">
-
 @import 'src/css/quasar.variables.scss';
 
 .example-wrapper {
@@ -60,29 +42,34 @@ const todoCount = computed(() => props.todos.length)
   margin-bottom: 16px;
 }
 
-.todo-list {
-  list-style: none;
-  padding: 0;
+.sub-title-text {
+  color: $secondary;
+  font-size: 21px;
+  font-weight: bold;
   margin-bottom: 16px;
 }
 
-.todo-list li {
-  padding: 8px 12px;
-  margin-bottom: 8px;
-  background-color: #f1f5f9;
-  border-radius: 6px;
-  cursor: pointer;
-  transition: background-color 0.2s;
+.tutorial {
+  color: $accent;
+  font-size: 16px;
+  margin-bottom: 16px;
 }
 
-.todo-list li:hover {
-  background-color: #e0ecf8;
+.testing{
+  background-color: #ffffff;
+  padding: 24px;
+  border-radius: 12px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.08);
+  max-width: 500px;
+  width: 100%;
+  font-family: 'Segoe UI', sans-serif;
+  margin: 0 auto;
 }
 
-.meta,
-.status,
-.clicks {
-  margin-bottom: 8px;
-  color: #555;
+.str {
+  color: $accent;
+  font-size: 12px;
+  margin-bottom: 16px;
 }
+
 </style>
