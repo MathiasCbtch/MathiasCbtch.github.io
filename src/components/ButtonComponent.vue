@@ -27,6 +27,10 @@ defineProps<Props>()
   width: 100%;
   font-family: 'Segoe UI', sans-serif;
   margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center; 
+  justify-content: center;
 }
 
 .button-primary {
