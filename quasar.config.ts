@@ -40,9 +40,8 @@ export default defineConfig((/* ctx */) => {
         node: 'node20'
       },
 
-      publicPath: process.env.NODE_ENV === 'production'
-        ? '/MathiasCbtch.github.io/'  // ✅ Your GitHub repo name here
-        : '/',
+      publicPath: '/',
+
 
       typescript: {
         strict: true,
