@@ -40,7 +40,7 @@ export default defineConfig((/* ctx */) => {
         node: 'node20'
       },
 
-      publicPath: '/MathiasCbtch.github.io/',
+      publicPath: '/',
 
 
       typescript: {
@@ -66,7 +66,7 @@ export default defineConfig((/* ctx */) => {
       // distDir
 
       extendViteConf(viteConf) {
-        viteConf.base = '/MathiasCbtch.github.io/'; // ✅ Match your repo name exactly
+        viteConf.base = '/';
       },    
       // viteVuePluginOptions: {},
       
