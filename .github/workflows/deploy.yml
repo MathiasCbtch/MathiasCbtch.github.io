@@ -29,4 +29,5 @@ jobs:
         with:
           github_token: ${{ secrets.GH_PAT }}
           publish_dir: ./dist/spa
+          publish_branch: gh-pages
 
