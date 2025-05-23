@@ -1,7 +1,7 @@
 <template>
   <q-page class="row items-center justify-evenly">
     <ExampleComponent
-      title="Hello World"
+      title="Hello World 123"
       subtitle="Cavatech Tutorial"
       tutorial="tutorial"
       str="söp"
