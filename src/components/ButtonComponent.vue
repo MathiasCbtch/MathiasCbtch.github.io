@@ -1,5 +1,5 @@
 <template>
-    <div class="example-button">
+    <div class="example-button-class">
         <button class="button-primary">
             {{ buttontext }}
         </button>
@@ -18,7 +18,7 @@ defineProps<Props>()
 <style lang="scss">
 @import 'src/css/quasar.variables.scss';
 
-.example-button {
+.example-button-class {
   background-color: #ffffff;
   padding: 24px;
   border-radius: 12px;
