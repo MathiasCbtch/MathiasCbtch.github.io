@@ -1,10 +1,10 @@
 <template>
   <q-page class="row items-center justify-evenly">
     <ExampleComponent
-      title="Hello World 12345"
+      title="Hello World"
       subtitle="Cavatech Tutorial"
       tutorial="tutorial"
-      str="söp"
+      str="Very nice string"
       active
     />
     <ButtonComponent buttontext="Click here" />
