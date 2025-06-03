@@ -7,7 +7,7 @@
       str="söp"
       active
     />
-    <ButtonComponent buttontext="Click here" />
+    <ButtonComponent buttontext="Click here" link="https://www.gp.se/" />
   </q-page>
 </template>
 

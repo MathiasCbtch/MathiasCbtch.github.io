@@ -1,15 +1,21 @@
 <template>
-    <div class="example-button-class">
-        <button class="button-primary">
-            {{ buttontext }}
-        </button>
-    </div>
-
+  <div class="example-button-class">
+    <q-btn
+      :label="buttontext"
+      :href="link"
+      target="_blank"
+      rel="noopener noreferrer"
+      color="primary"
+      class="button-primary"
+      unelevated
+    />
+  </div>
 </template>
 
 <script setup lang="ts">
 interface Props {
   buttontext: string
+  link: string
 }
 
 defineProps<Props>()
@@ -38,7 +44,6 @@ defineProps<Props>()
   font-size: 28px;
   font-weight: bold;
   margin-bottom: 16px;
-  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.08);
 }
 
 </style>
