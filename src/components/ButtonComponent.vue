@@ -14,11 +14,11 @@
 
 <script setup lang="ts">
 interface Props {
-  buttontext: string
-  link: string
+  buttontext: string;
+  link: string;
 }
 
-defineProps<Props>()
+defineProps<Props>();
 </script>
 
 <style lang="scss">
@@ -35,7 +35,7 @@ defineProps<Props>()
   margin: 0 auto;
   display: flex;
   flex-direction: column;
-  align-items: center; 
+  align-items: center;
   justify-content: center;
 }
 
@@ -45,5 +45,4 @@ defineProps<Props>()
   font-weight: bold;
   margin-bottom: 16px;
 }
-
 </style>

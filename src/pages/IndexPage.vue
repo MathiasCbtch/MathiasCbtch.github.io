@@ -12,6 +12,6 @@
 </template>
 
 <script setup lang="ts">
-import ExampleComponent from 'components/ExampleComponent.vue'
-import ButtonComponent from 'components/ButtonComponent.vue'
+import ExampleComponent from 'components/ExampleComponent.vue';
+import ButtonComponent from 'components/ButtonComponent.vue';
 </script>

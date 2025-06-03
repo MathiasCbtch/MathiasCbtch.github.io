@@ -6,19 +6,19 @@
   </div>
 
   <div class="testing">
-    <p class="str"> {{ str }}</p>
+    <p class="str">{{ str }}</p>
   </div>
 </template>
 
 <script setup lang="ts">
 interface Props {
-  title: string
-  subtitle: string
-  tutorial: string
-  str: string
+  title: string;
+  subtitle: string;
+  tutorial: string;
+  str: string;
 }
 
-defineProps<Props>()
+defineProps<Props>();
 </script>
 
 <style lang="scss">
@@ -35,7 +35,7 @@ defineProps<Props>()
   margin: 0 auto;
   display: flex;
   flex-direction: column;
-  align-items: center; 
+  align-items: center;
   justify-content: center;
 }
 
@@ -59,7 +59,7 @@ defineProps<Props>()
   margin-bottom: 16px;
 }
 
-.testing{
+.testing {
   background-color: #ffffff;
   padding: 24px;
   border-radius: 12px;
@@ -75,5 +75,4 @@ defineProps<Props>()
   font-size: 12px;
   margin-bottom: 16px;
 }
-
 </style>
