@@ -53,15 +53,4 @@ defineProps<Props>();
   font-size: 16px;
   margin-bottom: 16px;
 }
-
-.testing {
-  background-color: #ffffff;
-  padding: 24px;
-  border-radius: 12px;
-  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.08);
-  max-width: 500px;
-  width: 100%;
-  font-family: 'Segoe UI', sans-serif;
-  margin: 0 auto;
-}
 </style>
