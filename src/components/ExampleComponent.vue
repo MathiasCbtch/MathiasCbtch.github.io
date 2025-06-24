@@ -4,10 +4,6 @@
     <p class="sub-title-text">{{ subtitle }}</p>
     <p class="tutorial">{{ tutorial }}</p>
   </div>
-
-  <div class="testing">
-    <p class="str">{{ str }}</p>
-  </div>
 </template>
 
 <script setup lang="ts">
@@ -15,7 +11,6 @@ interface Props {
   title: string;
   subtitle: string;
   tutorial: string;
-  str: string;
 }
 
 defineProps<Props>();
@@ -68,11 +63,5 @@ defineProps<Props>();
   width: 100%;
   font-family: 'Segoe UI', sans-serif;
   margin: 0 auto;
-}
-
-.str {
-  color: $accent;
-  font-size: 12px;
-  margin-bottom: 16px;
 }
 </style>
