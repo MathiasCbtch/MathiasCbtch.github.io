@@ -4,10 +4,10 @@
       <ExampleComponent
         title="Hello World"
         subtitle="Cavatech Tutorial"
-        tutorial="tutorial"
+        subsubtitle="tutorial"
         active
       />
-      <ButtonComponent buttontext="Click here" link="https://www.gp.se/" />
+      <ButtonComponent buttontext="Click here" link="https://www.combitech.se/" />
     </q-card>
   </q-page>
 </template>

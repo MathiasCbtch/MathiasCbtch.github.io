@@ -1,8 +1,8 @@
 <template>
-  <div class="example-wrapper">
+  <div class="wrapper">
     <p class="title-text">{{ title }}</p>
     <p class="sub-title-text">{{ subtitle }}</p>
-    <p class="tutorial">{{ tutorial }}</p>
+    <p class="sub-sub-title-text">{{ subsubtitle }}</p>
   </div>
 </template>
 
@@ -10,7 +10,7 @@
 interface Props {
   title: string;
   subtitle: string;
-  tutorial: string;
+  subsubtitle: string;
 }
 
 defineProps<Props>();
@@ -19,7 +19,7 @@ defineProps<Props>();
 <style lang="scss">
 @import 'src/css/quasar.variables.scss';
 
-.example-wrapper {
+.wrapper {
   background-color: #ffffff;
   padding: 24px;
   border-radius: 12px;
@@ -48,7 +48,7 @@ defineProps<Props>();
   margin-bottom: 16px;
 }
 
-.tutorial {
+.sub-sub-title-text {
   color: $accent;
   font-size: 16px;
   margin-bottom: 16px;

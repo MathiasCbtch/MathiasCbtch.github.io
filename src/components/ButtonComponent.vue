@@ -1,5 +1,5 @@
 <template>
-  <div class="example-button-class">
+  <div class="button-wrapper-class">
     <q-btn
       :label="buttontext"
       :href="link"
@@ -24,7 +24,7 @@ defineProps<Props>();
 <style lang="scss">
 @import 'src/css/quasar.variables.scss';
 
-.example-button-class {
+.button-wrapper-class {
   background-color: #ffffff;
   padding: 24px;
   border-radius: 12px;
@@ -43,6 +43,5 @@ defineProps<Props>();
   color: $primary;
   font-size: 28px;
   font-weight: bold;
-  margin-bottom: 16px;
 }
 </style>
