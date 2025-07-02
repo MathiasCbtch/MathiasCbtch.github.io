@@ -31,7 +31,7 @@ defineProps<Props>();
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.08);
   max-width: 500px;
   width: 100%;
-  font-family: 'Segoe UI', sans-serif;
+  font-family: 'Arial', sans-serif;
   margin: 0 auto;
   display: flex;
   flex-direction: column;
