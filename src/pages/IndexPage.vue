@@ -13,12 +13,13 @@
         />
         <ButtonComponent
           buttontext="Click here"
-          link="https://www.combitech.se/"
+          link="https://quasar.dev/introduction-to-quasar"
         />
       </q-card-section>
     </q-card>
   </q-page>
 </template>
+
 
 <script setup lang="ts">
 import ExampleComponent from 'components/ExampleComponent.vue';
