@@ -50,7 +50,7 @@ export default defineConfig((/* ctx */) => {
 
       // rebuildCache: true, // rebuilds Vite/linter/etc cache on startup
 
-       publicPath: '/MathiasCbtch.github.io',
+       //publicPath: '/repo namn',
       // analyze: true,
       // env: {},
       // rawDefine: {}
