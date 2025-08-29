@@ -1,27 +1,13 @@
 <template>
   <q-page class="row items-center justify-center">
-    <q-card
-      class="q-pa-lg q-mx-auto q-my-xl text-center"
-      style="max-width: 500px;"
-    >
-      <q-card-section class="column items-center q-gutter-md">
-        <ExampleComponent
-          title="Hello World"
-          subtitle="Cavatech Tutorial"
-          subsubtitle="tutorial"
-          active
-        />
-        <ButtonComponent
-          buttontext="Click here"
-          link="https://quasar.dev/introduction-to-quasar"
-        />
+    <q-card class="q-pa-md text-center">
+      <q-card-section>
+        <!-- Här ska vi fylla i våra komponenter -->
       </q-card-section>
     </q-card>
   </q-page>
 </template>
 
-
 <script setup lang="ts">
-import ExampleComponent from 'components/ExampleComponent.vue';
-import ButtonComponent from 'components/ButtonComponent.vue';
+// import statements
 </script>
